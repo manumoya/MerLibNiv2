@@ -1,4 +1,4 @@
-package com.merlib.modelos;
+package com.merlib.models;
 
 
 public class Respuesta {

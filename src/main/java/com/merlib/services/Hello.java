@@ -1,7 +1,7 @@
-package com.merlib.servicios;
+package com.merlib.services;
 
-import com.merlib.modelos.Respuesta;
-import com.merlib.procesos.Mutant;
+import com.merlib.models.Respuesta;
+import com.merlib.process.Mutant;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
