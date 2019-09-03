@@ -1,7 +1,7 @@
 package com.merlib.servicios;
 
-import com.merlib.Procesos.Mutant;
 import com.merlib.modelos.Respuesta;
+import com.merlib.procesos.Mutant;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -49,6 +49,7 @@ public class Hello {
             System.out.println("VAL: " + arr[i]);
         }
 
+        //boolean isMutant = Mutant.isMutant(arr);
         boolean isMutant = Mutant.isMutant(arr);
         Respuesta resp = new Respuesta(isMutant);
         if (isMutant){

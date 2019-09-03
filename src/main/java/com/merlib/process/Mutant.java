@@ -1,6 +1,4 @@
-package com.merlib.Procesos;
-
-import java.util.Scanner;
+package com.merlib.process;
 
 public class Mutant {
 
