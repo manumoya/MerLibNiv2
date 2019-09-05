@@ -23,11 +23,11 @@ El objetivo de este documento es detallar la resolución del caso MeLi Nivel 2, 
 ### Idea principal
 
 * Crear api con java Jersey 2.0.
-* Utilizar servidor linux con Apache web server.
-* Utilizar servicios azure (cuenta estudiante).
+* Utilizar servidor linux con Apache Web Server.
+* Utilizar servicios Azure (cuenta estudiante).
 
 ### Supuestos
-* bla bla
+* No hay supuestos adicionales
 
 ### Descripción del programa
 
@@ -35,7 +35,7 @@ El programa considera los siguientes Packages
 
 * **com.merlib.models**: Contiene los java beans utilizados.
 * **com.merlib.process**: Contiene los programas que tienen algun proceso de negocio.
-* **com.merlib.services**: Contiene los programas que habilitan las api /mutant/.
+* **com.merlib.services**: Contiene los programas que habilitan la api /mutant/.
 
 Los programas son los siguientes:
 
@@ -53,9 +53,9 @@ Las pruebas unitarias se encuentran en el archivo [MutantTest.java](https://gith
 * java 7.*
 * Jersey 2.* (api framework)
 * Junit 4.*
-* Azure App Service
-* Apache Tomacat 8.*
+* Azure Cloud
 * Linux Server
+* Apache Tomacat 8.*
 * Deploy basado en GitHub
 * Postman (request client)
 * Apache Jmeter 3.* (Pruebas de carga)
@@ -79,7 +79,18 @@ Se puede mejorar, por ejemplo agregando Swagger para la documentación e la API
 ### Ejecución del programa
 
 * La url de la API es: [merlibniv2app2.azurewebsites.net](https://merlibniv2app2.azurewebsites.net/)
-* Path API: /api/mutant/
-* Método: POST
-* Consideraciones de llamado
-	* En el header Content-Type= application/jsonº
+* API Path:
+ 
+		/api/mutant/
+
+* API Método: 
+		
+		POST
+* API json request:
+
+		{
+			“dna”:["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
+		}
+	
+* Consideraciones de llamado:
+	* En el header debe ser configurado con Content-Type = application/json
