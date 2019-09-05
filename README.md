@@ -58,7 +58,7 @@ Las pruebas unitarias se encuentran en el archivo [MutantTest.java](https://gith
 * Apache Tomacat 8.*
 * Deploy basado en GitHub
 * Postman (request client)
-* Apache Jmeter 3.* (Pruebas de carga)
+* Apache Jmeter 3.* (Performance tool)
 
 ### Traza
 Los casos probados fueron los mismos casos de Nivel 1. Algunas de las trazas:
