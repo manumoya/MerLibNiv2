@@ -11,6 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  CASO MER LIB NIVEL 2
+  Bienvenido!!!! al caso Mer. Lib. Nivel 2
   </body>
 </html>
