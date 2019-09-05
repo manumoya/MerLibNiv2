@@ -18,23 +18,34 @@ public class Mutante {
     @Consumes(MediaType.APPLICATION_JSON)
     public Response validarMutante(String req){
 
+        //boolean isJSONOK = false;
+        boolean isMutant = false;
+        Respuesta resp = null;
 
         /*  convertir json en array */
-        JSONObject obj = new JSONObject(req);
-        JSONArray array = obj.getJSONArray("dna");
-        int largo = array.length();
-        String[] arr = new String[largo];
-        for(int i = 0 ; i < largo ; i++){
-            arr[i]  =  array.getString(i);
-            System.out.println("VAL: " + arr[i]);
+
+        try {
+            //  Block of code to try
+            JSONObject obj = new JSONObject(req);
+            JSONArray array = obj.getJSONArray("dna");
+
+            int largo = array.length();
+            String[] arr = new String[largo];
+            for (int i = 0; i < largo; i++) {
+                arr[i] = array.getString(i);
+                System.out.println("VAL: " + arr[i]);
+            }
+            isMutant = Mutant.isMutant(arr);
+            resp = new Respuesta(isMutant);
+
+            if (isMutant){
+                return Response.ok(resp).build();
+            }else{
+                return Response.status(Response.Status.FORBIDDEN).entity(resp).build();
+            }
+        }catch(Exception e) {
+            return Response.status(Response.Status.FORBIDDEN).build();
         }
 
-        boolean isMutant = Mutant.isMutant(arr);
-        Respuesta resp = new Respuesta(isMutant);
-        if (isMutant){
-            return Response.ok(resp).build();
-        }else{
-            return Response.status(Response.Status.FORBIDDEN).entity(resp).build();
-        }
     }
 }
