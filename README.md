@@ -59,6 +59,7 @@ Las pruebas unitarias se encuentran en el archivo [MutantTest.java](https://gith
 * Deploy basado en GitHub
 * Postman (request client)
 * Apache Jmeter 3.* (Performance tool)
+* MAC OS X 	
 
 ### Traza
 Los casos probados fueron los mismos casos de Nivel 1. Algunas de las trazas:
@@ -93,6 +94,14 @@ Se puede mejorar, por ejemplo agregando Swagger para la documentación e la API
 		{
 			“dna”:["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
 		}
+		
+* Response Status:
+
+		200 ok o 403 Forbiden
+		
+* Response Body:
+
+		{"mensaje": true} o {"mensaje": false}		
 	
 * Consideraciones de llamado:
 	* En el header debe ser configurado con Content-Type = application/json
