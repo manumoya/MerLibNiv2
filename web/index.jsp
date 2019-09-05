@@ -11,6 +11,8 @@
     <title>$Title$</title>
   </head>
   <body>
-  Bienvenido!!!! al caso Mer. Lib. Nivel 2
+  Bienvenido!!!! al caso Mer. Lib. Nivel 2</br>
+  by Manuel Moya M. </br>
+  GitHub: <a href="https://github.com/manumoya">@manumoya</a>
   </body>
 </html>
