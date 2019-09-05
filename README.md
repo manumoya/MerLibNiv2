@@ -79,13 +79,15 @@ Se puede mejorar, por ejemplo agregando Swagger para la documentación e la API
 ### Ejecución del programa
 
 * La url de la API es: [merlibniv2app2.azurewebsites.net](https://merlibniv2app2.azurewebsites.net/)
+* API Método: 
+		
+		POST
+		
 * API Path:
  
 		/api/mutant/
 
-* API Método: 
-		
-		POST
+
 * API json request:
 
 		{
