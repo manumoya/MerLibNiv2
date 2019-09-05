@@ -57,31 +57,32 @@ Las pruebas unitarias se encuentran en el archivo [MutantTest.java](https://gith
 * Apache Tomacat 8.*
 * Linux Server
 * Deploy basado en GitHub
+* Postman (request client)
+* Apache Jmeter 3.* (Pruebas de carga)
 
 ### Traza
-Los probados fueron los mismos de Nivel 1:
+Los probados fueron los mismos casos de Nivel 1. Algunas de las trazas
 
-|Caso 1 = true | Caso 2 = true | Caso 3 = true | Caso 4 = true | Caso 5 = true | Caso 6 = true |
-|---|---|---|---|---|---|
-| ![](img/traza_caso1.png) | ![](img/traza_caso2.png) | ![](img/traza_caso3.png) | ![](img/traza_caso4.png) | ![](img/traza_caso5a.png) | ![](img/traza_caso6.png) |
-| Caso 7 = true | Caso 8 = false | Caso 9 = false | Caso 10 = false | Caso 11 = false | Caso 12 = true 
-| ![](img/traza_caso7.png) | ![](img/traza_caso8.png) | ![](img/traza_caso9a.png) | ![](img/traza_caso10.png) | ![](img/traza_caso11.png) | ![](img/traza_caso12.png) |
-| Caso 13 = true | Caso 14 = false | Caso 15 = false | Caso 16 = true | Caso 17 = X | Caso 18 = X 
-| ![](img/traza_caso13.png) | ![](img/traza_caso14.png) | ![](img/traza_caso15.png) | ![](img/traza_caso16.png) | ![](img/traza_caso11.png) | ![](img/traza_caso11.png) |
-
-Los cuales se reflejan en el siguiente código:
-
-![](img/casos_java.png)
+|Caso 1 = true | Caso 4 = true |
+|---|---|
+| ![](img/traza_caso1.png) | ![](img/traza_caso4.png) | 
+| Caso 10 = false | Caso 11 = false |  
+|![](img/traza_caso10.png) | ![](img/traza_caso11.png) |
+|Caso 13 = true | Caso 16 = true | 
+|![](img/traza_caso13.png) | ![](img/traza_caso16.png) | 
+ 
 
 ### ¿Se puede mejorar?
 
-Se puede mejorar, entregando a cada análisis la cantidad de secuencia de ADN encontrada en el análisis anterior, de esta forma evita hacer procesamiento adicional. Es decir, si existe una secuencia horizontal, basta que encuentre una vertical (o diagonal) para que sea mutante.
+Se puede mejorar, por ejemplo agregando Swagger para la documentación e la API
 
 ### Ejecución del programa
 
-* Ingresar a la carpeta donde esté el archivo [Mutant.class](https://github.com/manumoya/MerLibNiv1/blob/master/out/production/MerLibNiv1/Mutant.class)
-* Ejecutar la siguiente línea de comando: **java Mutant**
-* El adn debe ser ingresado en el siguiente formato: **ATAAA,AGGGG,ATGGG,AGGGG,CGCGG**
-* Ejemplo:
+* La url de la API es: [API Nivel 2](https://merlibniv2app2.azurewebsites.net/)
+* Path API: /api/mutant/
+* Consideraciones de llamado
+	* En el header Content-Type= application/json
+	
+	
 
 	![](img/ejecuta_comando.png)
