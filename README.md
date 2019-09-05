@@ -1,16 +1,16 @@
-# Ejercicio MeLi Nivel 2 (Agosto 2019)
+# Ejercicio Mer. Lib. Nivel 2 (Agosto 2019)
 ###### Autor: [Manuel Moya - mmoyam@gmail.com]
-El objetivo de este documento es detallar la resolución del caso MeLi Nivel 2, donde se debe crear una api y desplegarlo en un servicio Cloud. Esto basado en el algortimo que detecta mutantes basados su secuencia de ADN del ejercicio anterior [(Nivel 1](https://github.com/manumoya/MerLibNiv1/).
+El objetivo de este documento es detallar la resolución del caso Mer. Lib. Nivel 2, donde se debe crear una api y desplegarlo en un servicio Cloud. Esto basado en el algortimo que detecta mutantes basados su secuencia de ADN del ejercicio anterior [(Nivel 1](https://github.com/manumoya/MerLibNiv1/).
 
 ### Enunciado
 
-* Crear una API REST, hostear esa API en un cloud computing libre (Google App Engine,Amazon AWS, etc), crear el servicio “/mutant/” en donde se pueda detectar si un humano esmutante enviando la secuencia de ADN mediante un HTTP POST con un Json el cual tenga el siguiente formato:
+* Crear una API REST, hostear esa API en un cloud computing libre (Google App Engine, Amazon AWS, etc), crear el servicio “/mutant/” en donde se pueda detectar si un humano esmutante enviando la secuencia de ADN mediante un HTTP POST con un Json el cual tenga el siguiente formato:
 
-	**POST → /mutant/**
-	
-	**{
-	“dna”:["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
-	}**
+		POST /mutant/
+		
+		{
+		“dna”:["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
+		}
 
 * En caso de verificar un mutante, debería devolver un HTTP 200-OK, en caso contrario un 403-Forbidden
 
