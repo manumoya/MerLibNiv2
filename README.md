@@ -61,7 +61,7 @@ Las pruebas unitarias se encuentran en el archivo [MutantTest.java](https://gith
 * Apache Jmeter 3.* (Pruebas de carga)
 
 ### Traza
-Los probados fueron los mismos casos de Nivel 1. Algunas de las trazas
+Los casos probados fueron los mismos casos de Nivel 1. Algunas de las trazas:
 
 |Caso 1 = true | Caso 4 = true |
 |---|---|
@@ -78,11 +78,8 @@ Se puede mejorar, por ejemplo agregando Swagger para la documentación e la API
 
 ### Ejecución del programa
 
-* La url de la API es: [API Nivel 2](https://merlibniv2app2.azurewebsites.net/)
+* La url de la API es: [merlibniv2app2.azurewebsites.net](https://merlibniv2app2.azurewebsites.net/)
 * Path API: /api/mutant/
+* Método: POST
 * Consideraciones de llamado
-	* En el header Content-Type= application/json
-	
-	
-
-	![](img/ejecuta_comando.png)
+	* En el header Content-Type= application/jsonº
