@@ -1,6 +1,6 @@
 # Ejercicio Mer. Lib. Nivel 2 (Agosto 2019)
 ###### Autor: [Manuel Moya - mmoyam@gmail.com]
-El objetivo de este documento es detallar la resolución del caso Mer. Lib. Nivel 2, donde se debe crear una api y desplegarlo en un servicio Cloud. Esto basado en el algortimo que detecta mutantes basados su secuencia de ADN del ejercicio anterior [(Nivel 1](https://github.com/manumoya/MerLibNiv1/).
+El objetivo de este documento es detallar la resolución del caso Mer. Lib. Nivel 2, donde se debe crear una api y desplegarlo en un servicio Cloud. Esto basado en el algortimo que detecta mutantes basados su secuencia de ADN del ejercicio anterior [(Nivel 1)](https://github.com/manumoya/MerLibNiv1/).
 
 ### Enunciado
 
@@ -97,7 +97,7 @@ Se puede mejorar, por ejemplo agregando Swagger para la documentación e la API
 		
 * Response Status:
 
-		200 ok o 403 Forbiden
+		200 ok o no403 Forbiden
 		
 * Response Body:
 
