@@ -48,6 +48,16 @@ Los programas son los siguientes:
 
 Las pruebas unitarias se encuentran en el archivo [MutantTest.java](https://github.com/manumoya/MerLibNiv2/tree/master/src/test/java/com/merlib/process/MutantTest.java).
 
+### Traza
+Los casos probados fueron los mismos casos de Nivel 1. Algunas de las trazas:
+
+|Caso 1 = true | Caso 4 = true |
+|---|---|
+| ![](img/traza_caso1.png) | ![](img/traza_caso4.png) | 
+| Caso 10 = false | Caso 11 = false |  
+|![](img/traza_caso10.png) | ![](img/traza_caso11.png) |
+|Caso 13 = true | Caso 16 = true | 
+|![](img/traza_caso13.png) | ![](img/traza_caso16.png) | 
 
 ### Tecnología utilizada
 * java 7.*
@@ -59,19 +69,8 @@ Las pruebas unitarias se encuentran en el archivo [MutantTest.java](https://gith
 * Deploy basado en GitHub
 * Postman (request client)
 * Apache Jmeter 3.* (Performance tool)
-* MAC OS X 	
-
-### Traza
-Los casos probados fueron los mismos casos de Nivel 1. Algunas de las trazas:
-
-|Caso 1 = true | Caso 4 = true |
-|---|---|
-| ![](img/traza_caso1.png) | ![](img/traza_caso4.png) | 
-| Caso 10 = false | Caso 11 = false |  
-|![](img/traza_caso10.png) | ![](img/traza_caso11.png) |
-|Caso 13 = true | Caso 16 = true | 
-|![](img/traza_caso13.png) | ![](img/traza_caso16.png) | 
- 
+* Maven.
+* MAC OS X  
 
 ### ¿Se puede mejorar?
 
@@ -97,7 +96,7 @@ Se puede mejorar, por ejemplo agregando Swagger para la documentación e la API
 		
 * Response Status:
 
-		200 ok o no403 Forbiden
+		200 ok o 403 Forbiden
 		
 * Response Body:
 
