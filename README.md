@@ -1,10 +1,10 @@
 # Ejercicio Mer. Lib. Nivel 2 (Agosto 2019)
 ###### Autor: [Manuel Moya - mmoyam@gmail.com]
-El objetivo de este documento es detallar la resolución del caso Mer. Lib. Nivel 2, donde se debe crear una api y desplegarlo en un servicio Cloud. Esto basado en el algortimo que detecta mutantes basados su secuencia de ADN del ejercicio anterior [(Nivel 1)](https://github.com/manumoya/MerLibNiv1/).
+El objetivo de este documento es detallar la solución del caso Mer. Lib. Nivel 2, donde se debe crear una api y desplegarlo en un servicio Cloud. Esto basado en el algortimo que detecta mutantes según su secuencia de ADN del ejercicio anterior [(Nivel 1)](https://github.com/manumoya/MerLibNiv1/).
 
 ### Enunciado
 
-* Crear una API REST, hostear esa API en un cloud computing libre (Google App Engine, Amazon AWS, etc), crear el servicio “/mutant/” en donde se pueda detectar si un humano esmutante enviando la secuencia de ADN mediante un HTTP POST con un Json el cual tenga el siguiente formato:
+* Crear una API REST, hostear esa API en un cloud computing libre (Google App Engine, Amazon AWS, etc), crear el servicio “/mutant/” en donde se pueda detectar si un humano es mutante enviando la secuencia de ADN mediante un HTTP POST con un Json el cual tenga el siguiente formato:
 
 		POST /mutant/
 		
@@ -17,13 +17,14 @@ El objetivo de este documento es detallar la resolución del caso Mer. Lib. Nive
 ### Entregables
 
 * Código Fuente en repositorio github.
+* Test de programa creado.
 * Instrucciones de cómo ejecutar el programa o la API. 
 * URL de la API.
 
 ### Idea principal
 
 * Crear api con java Jersey 2.0.
-* Utilizar servidor linux con Apache Web Server.
+* Utilizar servidor Linux con Apache Web Server.
 * Utilizar servicios Azure (cuenta estudiante).
 
 ### Supuestos
